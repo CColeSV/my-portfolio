@@ -1,0 +1,31 @@
+.button-container {
+  position: fixed;
+  z-index: 20;
+
+  right: 5px;
+  top: 2px;
+}
+
+#toggle-button-theme {
+  width: 100px;
+  height: 35px;
+  //   background-color: rgb(45, 44, 51);
+  border: none;
+
+  display: flex;
+  // padding: 0.5rem 1rem;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.Dark {
+  background-color: rgb(45, 44, 51);
+}
+
+.Light {
+  background-color: white;
+}
