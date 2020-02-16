@@ -6,3 +6,33 @@
 
   box-shadow: $content-shadow;
 }
+
+.section.section-secondary {
+  &.exp-dark {
+    background-color: $background-primary-dark;
+
+    h2 {
+      color: $font-dark-theme;
+    }
+
+    h3 {
+      color: $font-dark-theme;
+    }
+
+    h4 {
+      color: $font-dark-theme;
+    }
+
+    h5 {
+      color: $font-dark-theme;
+    }
+
+    p {
+      color: $font-dark-theme;
+    }
+
+    img {
+      background-color: $background-primary-dark;
+    }
+  }
+}

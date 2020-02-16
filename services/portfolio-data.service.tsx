@@ -27,6 +27,7 @@ export default class PortfolioDataService {
 
   public static readonly experienceList: IInfoCard[] = [
     {
+      darkLogo: "employer-logo-dark.svg",
       logo: "employer-logo.svg",
       headings: {
         primary: "StandOut Innovations",
@@ -37,6 +38,7 @@ export default class PortfolioDataService {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
     },
     {
+      darkLogo: "employer-logo-dark.svg",
       logo: "employer-logo.svg",
       headings: {
         primary: "Freelance",
@@ -47,6 +49,7 @@ export default class PortfolioDataService {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
     },
     {
+      darkLogo: "employer-logo-dark.svg",
       logo: "employer-logo.svg",
       headings: {
         primary: "QewaRe",

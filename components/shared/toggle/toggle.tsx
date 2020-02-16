@@ -20,7 +20,8 @@ class Toggle extends React.Component<IProps, IState> {
 
   changeThemeText = () => {
     let newThemeClass = this.props.themeClass === "Dark" ? "Light" : "Dark";
-    this.props.themeClass == "Dark"
+
+    newThemeClass == "Dark"
       ? this.setState({ themeText: "Light Theme" })
       : this.setState({ themeText: "Dark Theme" });
 

@@ -4,9 +4,11 @@ import "./info-card.scss";
 
 interface IProps {
   cardDetails: IInfoCard;
+  themeClass: string;
 }
 
 export interface IInfoCard {
+  darkLogo: string;
   logo: string;
   headings: {
     primary: string;
@@ -19,13 +21,23 @@ export interface IInfoCard {
 
 const InfoCard: React.StatelessComponent<IProps> = props => {
   const {
-    cardDetails: { logo, headings, description, isLast }
+    cardDetails: { logo, headings, description, isLast, darkLogo }
   } = props;
 
   return (
-    <div className={"info-card-container" + (isLast ? " last-card" : "")}>
+    <div
+      className={
+        `info-card-container ${
+          props.themeClass === "Dark" ? "info-dark" : ""
+        }` + (isLast ? " last-card" : "")
+      }
+    >
       <div className="logo-container">
-        <img src={`/static/images/logos/${logo}`} />
+        <img
+          src={`/static/images/logos/${
+            props.themeClass === "Dark" ? darkLogo : logo
+          }`}
+        />
       </div>
 
       <div className="details-container">

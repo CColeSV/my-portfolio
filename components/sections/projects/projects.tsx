@@ -35,7 +35,11 @@ class Projects extends React.Component<IProps, IState> {
     const { selectedProject } = this.state;
 
     return (
-      <section className="section section-secondary">
+      <section
+        className={`section section-secondary ${
+          this.props.themeClass === "Dark" ? "proj-dark" : ""
+        }`}
+      >
         <h2>Projects</h2>
 
         <div className="projects-container">

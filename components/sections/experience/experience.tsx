@@ -12,16 +12,20 @@ interface IProps {
 //className={props.themeClass}
 
 const Experience: React.StatelessComponent<IProps> = ({
-  experienceList
-  // themeClass
+  experienceList,
+  themeClass
 }) => {
   return (
-    <section className="section section-secondary">
+    <section
+      className={`section section-secondary ${
+        themeClass === "Dark" ? "exp-dark" : ""
+      }`}
+    >
       <h2>Experience</h2>
 
       <div className="content-container experience-container">
         {experienceList.map((exp, i) => (
-          <InfoCard key={i} cardDetails={exp} />
+          <InfoCard key={i} cardDetails={exp} themeClass={themeClass} />
         ))}
       </div>
     </section>

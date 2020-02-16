@@ -10,14 +10,21 @@ interface IProps {
   themeClass: string;
 }
 
-const Skills: React.StatelessComponent<IProps> = ({ skillList }) => {
+const Skills: React.StatelessComponent<IProps> = ({
+  skillList,
+  themeClass
+}) => {
   return (
-    <section className="section section-primary">
+    <section
+      className={`section section-primary ${
+        themeClass === "Dark" ? "skills-dark" : ""
+      }`}
+    >
       <h2>Skills</h2>
 
       <div className="skills-container">
         {skillList.map((skill, i) => (
-          <Skill key={i} skill={skill} size="large" />
+          <Skill key={i} themeClass={themeClass} skill={skill} size="large" />
         ))}
       </div>
     </section>

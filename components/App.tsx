@@ -25,7 +25,7 @@ class App extends React.Component<IProps, IState> {
   constructor(props) {
     super(props);
     this.state = {
-      themeClass: "Dark"
+      themeClass: "Light"
     };
   }
 

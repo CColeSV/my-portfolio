@@ -7,3 +7,13 @@
 
   max-width: $size-medium;
 }
+
+.section.section-secondary {
+  &.proj-dark {
+    background-color: $background-primary-dark;
+
+    h2 {
+      color: $font-dark-theme;
+    }
+  }
+}

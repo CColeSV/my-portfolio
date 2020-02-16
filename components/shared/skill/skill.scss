@@ -33,8 +33,13 @@
     }
   }
 
+  &.skill-dark {
+    color: white;
+  }
+
   &:hover {
     color: $theme-color;
+
     animation: wobble 0.5s 1;
   }
 }

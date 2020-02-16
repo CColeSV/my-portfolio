@@ -15,9 +15,16 @@ interface IProps {
   themeClass: string;
 }
 
-const About: React.StatelessComponent<IProps> = ({ aboutTextList }) => {
+const About: React.StatelessComponent<IProps> = ({
+  aboutTextList,
+  themeClass
+}) => {
   return (
-    <section className="section section-primary section-about">
+    <section
+      className={`section section-primary section-about ${
+        themeClass === "Dark" ? "about-dark" : ""
+      }`}
+    >
       <h2>About Craig</h2>
       <div className="content-container about-container">
         <img className="portrait" src="/static/images/profile-picture.jpg" />

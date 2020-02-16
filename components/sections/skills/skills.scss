@@ -8,3 +8,13 @@
 
   max-width: $size-medium;
 }
+
+.section.section-primary {
+  &.skills-dark {
+    background-color: $background-primary-dark;
+
+    h2 {
+      color: $font-dark-theme;
+    }
+  }
+}
