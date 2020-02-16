@@ -40,17 +40,32 @@ class App extends React.Component<IProps, IState> {
           themeClass={this.state.themeClass}
           updateThemeClass={this.updateThemeClass}
         />
-        <Landing userDetails={PortfolioDataService.userDetails} />
-        <About aboutTextList={PortfolioDataService.aboutTextList} />
-        <Experience
-          experienceList={PortfolioDataService.experienceList}
+        <Landing
           themeClass={this.state.themeClass}
+          userDetails={PortfolioDataService.userDetails}
+        />
+        <About
+          themeClass={this.state.themeClass}
+          aboutTextList={PortfolioDataService.aboutTextList}
+        />
+        <Experience
+          themeClass={this.state.themeClass}
+          experienceList={PortfolioDataService.experienceList}
         />
         {/* <Education educationList={PortfolioDataService.educationList} /> */}
-        <Projects projectList={PortfolioDataService.projectList} />
-        <Skills skillList={PortfolioDataService.skillList} />
-        <Contact socialIconList={PortfolioDataService.socialIconList} />
-        <Footer />
+        <Projects
+          themeClass={this.state.themeClass}
+          projectList={PortfolioDataService.projectList}
+        />
+        <Skills
+          themeClass={this.state.themeClass}
+          skillList={PortfolioDataService.skillList}
+        />
+        <Contact
+          themeClass={this.state.themeClass}
+          socialIconList={PortfolioDataService.socialIconList}
+        />
+        <Footer themeClass={this.state.themeClass} />
       </div>
     );
   }

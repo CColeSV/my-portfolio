@@ -10,6 +10,7 @@ interface IState {
 
 interface IProps {
   projectList: IProject[];
+  themeClass: string;
 }
 
 class Projects extends React.Component<IProps, IState> {

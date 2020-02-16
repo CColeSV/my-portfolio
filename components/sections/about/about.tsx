@@ -12,14 +12,15 @@ const renderAboutText = (aboutTextList: string[]) => (
 
 interface IProps {
   aboutTextList: string[];
+  themeClass: string;
 }
 
-const About: React.StatelessComponent<IProps> = ({aboutTextList}) => {
+const About: React.StatelessComponent<IProps> = ({ aboutTextList }) => {
   return (
     <section className="section section-primary section-about">
       <h2>About Craig</h2>
       <div className="content-container about-container">
-        <img className="portrait" src='/static/images/profile-picture.jpg' />
+        <img className="portrait" src="/static/images/profile-picture.jpg" />
         {renderAboutText(aboutTextList)}
       </div>
     </section>

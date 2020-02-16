@@ -7,9 +7,10 @@ import { SkillEnum } from "../../../constants";
 
 interface IProps {
   skillList: SkillEnum[];
+  themeClass: string;
 }
 
-const Skills: React.StatelessComponent<IProps> = ({skillList}) => {
+const Skills: React.StatelessComponent<IProps> = ({ skillList }) => {
   return (
     <section className="section section-primary">
       <h2>Skills</h2>

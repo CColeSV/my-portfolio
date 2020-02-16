@@ -16,6 +16,7 @@ interface IState {
 
 interface IProps {
   userDetails: IUserDetails;
+  themeClass: string;
 }
 
 export interface IUserDetails {
