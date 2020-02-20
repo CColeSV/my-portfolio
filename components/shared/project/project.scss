@@ -11,6 +11,10 @@
     background-color: #ddd;
     padding: 0.25rem 0 0.25rem 0.25rem;
 
+    &.pro-dark {
+      background-color: rgb(161, 159, 159);
+    }
+
     .fa-circle {
       padding-right: 0.5rem;
 
@@ -65,7 +69,7 @@
         font-weight: bold;
         margin-top: 72px;
 
-        transition: .75s all ease-in-out;
+        transition: 0.75s all ease-in-out;
       }
     }
 
@@ -88,6 +92,6 @@
 
 @media only screen and (max-width: $size-small) {
   .project-container {
-      width: 100%;
+    width: 100%;
   }
 }

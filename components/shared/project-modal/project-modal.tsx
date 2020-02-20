@@ -7,6 +7,7 @@ import { SkillEnum } from "../../../constants";
 
 interface IProps {
   project: IProject;
+  themeClass: string;
   modalExitEvent: () => void;
 }
 
@@ -20,17 +21,13 @@ const renderTechnologies = (skillList: SkillEnum[]) =>
 const renderButtons = (url: IUrl) => (
   <div className="button-links">
     {url.github && (
-      <a href={url.github}
-        className="link-button button-github"
-      >
+      <a href={url.github} className="link-button button-github">
         Github
         <i className="fab fa-github" />
       </a>
     )}
     {url.website && (
-      <a href={url.website}
-        className="link-button button-website"
-      >
+      <a href={url.website} className="link-button button-website">
         Website
         <i className="fa fa-link" />
       </a>
@@ -64,7 +61,12 @@ class ProjectModal extends React.Component<IProps> {
 
     return (
       <div className="project-modal-container" onClick={modalExitEvent}>
-        <div className="modal-content-container" onClick={contentClickEvent}>
+        <div
+          className={`modal-content-container ${
+            this.props.themeClass === "Dark" ? "project-dark" : ""
+          }`}
+          onClick={contentClickEvent}
+        >
           <div className="image-container">
             <img
               className="project-image"
@@ -72,7 +74,11 @@ class ProjectModal extends React.Component<IProps> {
             />
           </div>
 
-          <div className="modal-body-container">
+          <div
+            className={`modal-body-container ${
+              this.props.themeClass === "Dark" ? "project-dark" : ""
+            }`}
+          >
             <div className="header-container">
               <div className="primary">
                 <h2 className="modal-heading">{name}</h2>

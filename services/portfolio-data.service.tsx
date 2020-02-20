@@ -63,40 +63,40 @@ export default class PortfolioDataService {
   ];
 
   public static readonly educationList: IInfoCard[] = [
-    {
-      logo: "education-logo.svg",
-      headings: {
-        primary: "Education Institution",
-        secondary: "Education Type",
-        tertiary: "2013 - 2016"
-      },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
-    },
-    {
-      logo: "education-logo.svg",
-      headings: {
-        primary: "Education Institution",
-        secondary: "Education Type",
-        tertiary: "2007 - 2012"
-      },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.",
-      isLast: true
-    }
+    // {
+    //   logo: "education-logo.svg",
+    //   headings: {
+    //     primary: "Education Institution",
+    //     secondary: "Education Type",
+    //     tertiary: "2013 - 2016"
+    //   },
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat."
+    // },
+    // {
+    //   logo: "education-logo.svg",
+    //   headings: {
+    //     primary: "Education Institution",
+    //     secondary: "Education Type",
+    //     tertiary: "2007 - 2012"
+    //   },
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.",
+    //   isLast: true
+    // }
   ];
 
   public static readonly projectList: IProject[] = [
     {
       id: 0,
-      name: "Project Name",
+      name: "Cory Blase Photography Portfolio",
       description: {
         overview:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
         detailed:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
-      img: "portfolio.jpg",
+      img: "img-1-1.jpg",
       tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
       url: {
         github: "https://github.com/HarveyD/seng-portfolio",
@@ -106,14 +106,14 @@ export default class PortfolioDataService {
     },
     {
       id: 1,
-      name: "Project Name",
+      name: "Guess-A-Number React App",
       description: {
         overview:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
         detailed:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
-      img: "portfolio.jpg",
+      img: "img-1-1.jpg",
       tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
       url: {
         github: "https://github.com/HarveyD/seng-portfolio",
@@ -123,14 +123,14 @@ export default class PortfolioDataService {
     },
     {
       id: 2,
-      name: "Project Name",
+      name: "Weather App",
       description: {
         overview:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
         detailed:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
-      img: "portfolio.jpg",
+      img: "img-1-1.jpg",
       tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
       url: {
         github: "https://github.com/HarveyD/seng-portfolio",
@@ -140,14 +140,14 @@ export default class PortfolioDataService {
     },
     {
       id: 3,
-      name: "Project Name",
+      name: "Movie App",
       description: {
         overview:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.",
         detailed:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
-      img: "portfolio.jpg",
+      img: "img-4-4.jpg",
       tagList: [SkillEnum.ts, SkillEnum.react, SkillEnum.html5, SkillEnum.css3],
       url: {
         github: "https://github.com/HarveyD/seng-portfolio",

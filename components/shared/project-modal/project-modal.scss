@@ -25,12 +25,40 @@
     overflow-y: auto;
     cursor: default;
 
+    &.project-dark {
+      background-color: $background-primary-dark;
+    }
+
+    &.project-dark h2 {
+      color: $font-dark-theme;
+    }
+
+    &.project-dark p {
+      color: $font-dark-theme;
+    }
+
     .modal-body-container {
       display: flex;
       flex-direction: column;
       flex: 4;
       padding: 0.85rem 1.05rem 1.05rem 1.05rem;
       background-color: $background-primary;
+
+      &.project-dark {
+        background-color: $background-primary-dark;
+      }
+
+      &.project-dark h2 {
+        color: $font-dark-theme;
+      }
+
+      &.project-dark p {
+        color: $font-dark-theme;
+      }
+
+      &.project-dark i {
+        color: white;
+      }
 
       .header-container {
         margin: 0 0 1.05rem 0;
@@ -87,7 +115,7 @@
         .button-links {
           display: flex;
           flex-direction: row;
-    
+
           .link-button {
             display: flex;
             justify-content: center;
@@ -100,24 +128,25 @@
             transition: 0.25s background-color ease-in-out;
             cursor: pointer;
             text-decoration: none;
-    
-            .fa, .fab {
+
+            .fa,
+            .fab {
               padding-left: 0.35rem;
             }
           }
-    
+
           .button-github {
             background-color: #333;
             margin-right: 1rem;
-    
+
             &:hover {
               background-color: #464646;
             }
           }
-    
+
           .button-website {
             background-color: $theme-color;
-    
+
             &:hover {
               background-color: $theme-light;
             }

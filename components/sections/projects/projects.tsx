@@ -48,6 +48,7 @@ class Projects extends React.Component<IProps, IState> {
               key={project.id}
               projectDetails={project}
               projectClick={this.handleProjectClick}
+              themeClass={this.props.themeClass}
             />
           ))}
         </div>
@@ -56,6 +57,7 @@ class Projects extends React.Component<IProps, IState> {
           <ProjectModal
             project={selectedProject}
             modalExitEvent={this.handleModalExit}
+            themeClass={this.props.themeClass}
           />
         )}
       </section>

@@ -5,6 +5,7 @@ import { SkillEnum } from "../../../constants";
 
 interface IProps {
   projectDetails: IProject;
+  themeClass: string;
   projectClick: (projectId: number) => void;
 }
 
@@ -38,11 +39,10 @@ const Project: React.StatelessComponent<IProps> = props => {
   } = props;
 
   return (
-    <div
-      onClick={() => projectClick(id)}
-      className="project-container"
-    >
-      <div className="heading">
+    <div onClick={() => projectClick(id)} className="project-container">
+      <div
+        className={`heading ${props.themeClass === "Dark" ? "pro-dark" : ""}`}
+      >
         <div className="fa fa-circle red" />
         <div className="fa fa-circle yellow" />
         <div className="fa fa-circle green" />
@@ -53,10 +53,7 @@ const Project: React.StatelessComponent<IProps> = props => {
           <div className="description-container">{overview}</div>
         </div>
 
-        <img
-          className="project-image"
-          src={`/static/images/projects/${img}`}
-        />
+        <img className="project-image" src={`/static/images/projects/${img}`} />
       </div>
     </div>
   );
